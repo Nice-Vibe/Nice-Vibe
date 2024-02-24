@@ -6,7 +6,7 @@ NiceVibe is a social media application designed to foster positivity and connect
 
 - **Anonymous Polls**: Users can participate in anonymous polls where they can give compliments to their peers based on pre-written statements.
 - **"Flame" System**: Winners of the polls receive a "flame," adding a gamified element to the interactions.
-- **God Mode Subscription**: Users have the option to subscribe for $6.99 to unlock "God Mode," which provides hints regarding who voted for them in a poll.
+- **God Mode Subscription**: Users have the option to subscribe for ₹6.99 to unlock "God Mode," which provides hints regarding who voted for them in a poll.
 
 ## Why NiceVibe?
 
