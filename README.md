@@ -26,6 +26,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, feel free to reach out to us at [contact@nicevibe.com](mailto:siddharthavanka68@gmail.com).
+If you have any questions, suggestions, or feedback, feel free to reach out to us at [siddharthavanka68@gmail.com](mailto:siddharthavanka68@gmail.com).
 
 Thank you for using NiceVibe! Let's spread positivity together. 🌟
