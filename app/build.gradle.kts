@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.santhi.nicevibe"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.santhi.nicevibe"
@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {
