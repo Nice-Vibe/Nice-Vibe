@@ -4,8 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.santhi.nicevibe.MainActivity
 import com.santhi.nicevibe.R
+import com.santhi.nicevibe.onbording.OnBordingActivity
 
 
 // AppSplashScreenActivity is responsible for displaying the splash screen of the application.
@@ -25,7 +25,7 @@ class AppSplashScreenActivity : AppCompatActivity() {
         // Here, it posts a delayed action to start the MainActivity after 1000 milliseconds (1 second).
         Handler(mainLooper).postDelayed({
             // Create an Intent to start the MainActivity.
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, OnBordingActivity::class.java)
             // Start the MainActivity.
             startActivity(intent)
             // Finish the current activity so that it's removed from the back stack.

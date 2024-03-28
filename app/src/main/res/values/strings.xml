@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">Nice Vibe</string>
+
+    <string-array name="spinner_items">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+        <!-- Add more items here if needed -->
+    </string-array>
+    <string-array name="college_list">
+        <item>Select your college</item>
+        <item>ANITS</item>
+        <item>GITAM</item>
+        <item>NITW</item>
+        <item>LPU</item>
+    </string-array>
+    <string-array name="branch">
+        <item>Select your branch</item>
+        <item>CSE</item>
+        <item>CSD</item>
+        <item>CSM</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>MEC</item>
+        <item>CIVIL</item>
+        <item>CHEMICAL ENG</item>
+
+    </string-array>
+    <string-array name="passout">
+        <item>Select your passout year</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+    </string-array>
+    <string-array name="sec">
+        <item>Select your section</item>
+        <item>No section</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+
 </resources>

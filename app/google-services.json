@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "259553303245",
+    "project_id": "nice-vibe-d2471",
+    "storage_bucket": "nice-vibe-d2471.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259553303245:android:93e282da3bf63ae004e784",
+        "android_client_info": {
+          "package_name": "com.santhi.nicevibe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR7ijm5SV-eckQZJJjHoy8-W84WFnRTqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
