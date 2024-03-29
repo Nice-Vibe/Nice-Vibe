@@ -31,7 +31,8 @@ class UploadActivity : AppCompatActivity() {
         val section = localStorage.getString("sec")
         val userModel = UserModel(userName,gender,college,year,branch,section)
         val uid = FirebaseAuth.getInstance().currentUser?.uid
-        Firebase.database("https://nice-vibe-d2471-default-rtdb.asia-southeast1.firebasedatabase.app/").reference.child("users").child(uid.toString()).setValue(userModel).addOnCompleteListener {
+        val roomId = year+branch+section
+        Firebase.database("https://nice-vibe-d2471-default-rtdb.asia-southeast1.firebasedatabase.app/").reference.child("users").child(college).child(roomId).child(uid.toString()).setValue(userModel).addOnCompleteListener {
             if (it.isSuccessful){
                 Toast.makeText(this, "Sucess", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this,MainActivity::class.java))

@@ -42,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.060000002" />
     <ImageView
         android:id="@+id/arrow_image1"
         android:layout_width="wrap_content"
