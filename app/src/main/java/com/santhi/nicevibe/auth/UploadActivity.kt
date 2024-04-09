@@ -12,6 +12,7 @@ import com.santhi.nicevibe.MainActivity
 import com.santhi.nicevibe.R
 import com.santhi.nicevibe.databinding.ActivitySignUpBinding
 import com.santhi.nicevibe.databinding.ActivityUploadBinding
+import com.santhi.nicevibe.fcm.TokenManager
 import com.santhi.nicevibe.localStorage.LocalStorage
 import com.santhi.nicevibe.model.UserModel
 
@@ -21,6 +22,10 @@ class UploadActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityUploadBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val tokenManager = TokenManager(this)
+
+        tokenManager.getSavedToken()
+        val notificationID = tokenManager.getSavedToken()
         val localStorage = LocalStorage(this)
         val email = localStorage.getString("email")
         val gender = localStorage.getString("gender")
@@ -29,8 +34,10 @@ class UploadActivity : AppCompatActivity() {
         val year = localStorage.getString("year")
         val branch = localStorage.getString("branch")
         val section = localStorage.getString("sec")
-        val userModel = UserModel(userName,gender,college,year,branch,section)
+        val profile = localStorage.getString("profile")
+
         val uid = FirebaseAuth.getInstance().currentUser?.uid
+        val userModel = UserModel(userName,gender,college,year,branch,section,uid,notificationID,profile)
         val roomId = year+branch+section
         Firebase.database("https://nice-vibe-d2471-default-rtdb.asia-southeast1.firebasedatabase.app/").reference.child("users").child(college).child(roomId).child(uid.toString()).setValue(userModel).addOnCompleteListener {
             if (it.isSuccessful){

@@ -42,7 +42,7 @@ class SelectClassActivity : AppCompatActivity() {
             localStorage.saveString("year", selectYear)
             localStorage.saveString("branch", selectBranch)
             localStorage.saveString("sec", selectSection)
-            startActivity(Intent(this,SignUpActivity::class.java))
+            startActivity(Intent(this,UploadProfileActivity::class.java))
         }
     }
     private fun showToast(message: String) {
